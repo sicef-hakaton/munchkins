@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp" >
+
+    <TextView
+        android:id="@+id/comment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:text="14 komentara"
+        android:textColor="#a6a6a6"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/holder"
+        android:layout_below="@id/comment_info" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@id/holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/comment_button_sendsend"
+            android:hint="Komentar.."
+            android:singleLine="true" />
+
+        <Button
+            android:id="@id/comment_button_sendsend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/send4" />
+    </RelativeLayout>
+
+</RelativeLayout>

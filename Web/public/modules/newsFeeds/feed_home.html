@@ -1,0 +1,23 @@
+<div id="container" class="container">
+    <div id="feeds">
+        <div class="feed_item" ng-repeat="feed in feeds">
+            <div class="title">{{feed.title}}<div class="user">{{feed.user.username}}  <i class="fa fa-star">  {{feed.user.rate}}</i></div></div>
+
+            <div class="feed_body">{{feed.body}}</div>
+            <div class="tags" ng-repeat="tag in feed.tags"><a href="#">{{tag}}</a></div>
+            <p>Comments</p>
+            <div class="comments">
+                <div ng-repeat="comment in feed.comments">
+                <p>
+                    <div class="comment">
+                        <label>{{comment.username}}</label>
+                        <p>{{comment.comment}}</p>
+                    </div>
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

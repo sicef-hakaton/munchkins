@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">hakatonApp</string>
+    <string name="title_section1">Feed</string>
+    <string name="title_section2">Predavač</string>
+    <string name="title_section3">Study buddy</string>
+    <string name="title_section4">Profil</string>
+    <string name="title_section5">Podešavanja</string>
+    <string name="title_section6">O aplikaciji</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Dodaj</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

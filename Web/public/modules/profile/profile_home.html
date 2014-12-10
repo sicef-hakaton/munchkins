@@ -1,0 +1,73 @@
+
+<div id="profile" class="container">
+    <div id="feeds" class="left">
+        <form class="form-horizontal" role="form" ng-submit="submit()">
+         <!--   <div class="form-group">
+                <label for="inputEmail" class="col-sm-2 control-label">Email (username)</label>
+                <div class="col-sm-10">
+                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" ng-model="username">
+                </div>
+            </div>
+           -->
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="p.password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-2 control-label">First name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="first_name" class="form-control"  placeholder="First name" ng-model="p.first_name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Last name</label>
+                <div class="col-sm-10">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last name" ng-model="p.last_name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Picture</label>
+                <div class="col-sm-10">
+                    <input type="text" name="picture" class="form-control" placeholder="Picture url" ng-model="p.picture">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">JMBG</label>
+                <div class="col-sm-10">
+                    <input type="text" name="picture" class="form-control" placeholder="Unique Personal ID" ng-model="p.jmbg">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Student ID</label>
+                <div class="col-sm-10">
+                    <input type="text" name="picture" class="form-control" placeholder="Student ID" ng-model="p.br_indeksa">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Interested in</label>
+                <div class="col-sm-10">
+                    <input type="hidden" ui-select2="select2OptionsI" ng-model="interested_tags">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Interested in lecturing</label>
+                <div class="col-sm-10">
+                    <input type="hidden" ui-select2="select2OptionsT" ng-model="teach_tags">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button ng-click="submit(p)" class="btn btn-default" style="float:right">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="options" class="right">
+        <i class="fa fa-star">{{rate}} points</i>
+    </div>
+</div>
+
+
